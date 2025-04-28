@@ -1,8 +1,10 @@
 def remove_elements(list_to_remove_elements):
-    del list_to_remove_elements[0]
-    del list_to_remove_elements[4]
-    del list_to_remove_elements[5]
-    return list_to_return_elements
+   if len(list_to_remove_elements) >= 6:
+       list_to_remove_elements.pop(0)
+       list_to_remove_elements.pop(4)
+       list_to_remove_elements.pop(5)
+        return list_to_remove_elements
+    
 
 
 def add_elements(list_to_add_elements):
